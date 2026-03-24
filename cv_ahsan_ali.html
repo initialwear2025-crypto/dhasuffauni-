@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Ahsan Ali – CV</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 9.5pt;
+    color: #222;
+    background: #fff;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── TOP HEADER ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 36px 18px 36px;
+  }
+  .header-left h1 { font-size: 30pt; font-weight: 900; line-height: 1.1; }
+  .header-left h2 { font-size: 13pt; font-weight: 400; color: #444; margin-top: 4px; }
+  .header-left .contact {
+    margin-top: 8px;
+    font-size: 9pt;
+    color: #555;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .header-left .contact span { color: #bbb; }
+  .header-photo img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  .header-photo .placeholder {
+    width: 110px;
+    height: 110px;
+    background: #ddd;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8pt;
+    color: #999;
+  }
+
+  /* ── TWO-COLUMN BODY ── */
+  .body {
+    display: flex;
+    gap: 0;
+    padding: 0 36px 36px 36px;
+  }
+  .col-left { flex: 1.6; padding-right: 32px; }
+  .col-right { flex: 1; border-left: 1px solid #e0e0e0; padding-left: 24px; }
+
+  /* ── SECTION HEADING ── */
+  .section-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    border-bottom: 1.5px solid #222;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  /* ── SUMMARY ── */
+  .summary-text { font-size: 9.2pt; line-height: 1.55; }
+  .summary-text strong { font-weight: 700; }
+
+  /* ── WORK EXPERIENCE ── */
+  .job { margin-bottom: 16px; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .job-title { font-size: 9.8pt; font-weight: 600; }
+  .job-date { font-size: 9pt; color: #444; }
+  .job-company { font-size: 9.5pt; color: #1a73e8; font-weight: 600; margin-bottom: 6px; }
+  .job ul { padding-left: 14px; }
+  .job ul li { margin-bottom: 4px; line-height: 1.5; font-size: 9pt; }
+
+  /* ── EDUCATION ── */
+  .edu { margin-bottom: 14px; }
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-degree { font-size: 9.5pt; font-weight: 500; }
+  .edu-date { font-size: 9pt; color: #444; }
+  .edu-school { font-size: 9.5pt; color: #1a73e8; font-weight: 600; margin-bottom: 4px; }
+  .edu ul { padding-left: 14px; }
+  .edu ul li { margin-bottom: 3px; line-height: 1.5; font-size: 9pt; }
+
+  /* ── CERTIFICATIONS ── */
+  .cert { margin-bottom: 12px; }
+  .cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .cert-name { font-size: 9.5pt; font-weight: 500; }
+  .cert-date { font-size: 9pt; color: #444; }
+  .cert-issuer { font-size: 9pt; color: #1a73e8; font-weight: 600; margin-bottom: 2px; }
+  .cert-desc { font-size: 8.8pt; color: #444; font-style: italic; }
+
+  /* ── SKILLS (right column) ── */
+  .skill-item { margin-bottom: 10px; }
+  .skill-name { font-size: 9pt; color: #666; margin-bottom: 3px; }
+  .skill-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 1px;
+    overflow: hidden;
+  }
+  .skill-fill {
+    height: 100%;
+    background: #222;
+    border-radius: 1px;
+  }
+
+  /* ── LANGUAGES ── */
+  .lang-group { margin-bottom: 8px; }
+  .lang-label { font-size: 9pt; font-weight: 700; margin-bottom: 3px; }
+  .lang-group ul { padding-left: 14px; }
+  .lang-group ul li { font-size: 9pt; line-height: 1.5; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <h1>Ahsan Ali</h1>
+    <h2>Senior Digital Analytics Consultant</h2>
+    <div class="contact">
+      <span>Dresden, Germany</span>
+      <span>|</span>
+      <span>015775145570</span>
+      <span>|</span>
+      <a href="mailto:ahsan.jillani@hotmail.com">ahsan.jillani@hotmail.com</a>
+    </div>
+  </div>
+  <div class="header-photo">
+    <div class="placeholder">Photo</div>
+  </div>
+</div>
+
+<!-- BODY: two columns -->
+<div class="body">
+
+  <!-- LEFT COLUMN -->
+  <div class="col-left">
+
+    <!-- Summary -->
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+      <strong>Senior Digital Analytics Consultant</strong> mit Expertise in der Analyse von Web-Performance,
+      Nutzerverhalten und Conversion-Optimierung. Erfahren im Aufbau von Tracking-Konzepten, der Verarbeitung
+      großer Datenmengen sowie der Erstellung automatisierter Berichte und Dashboards, einschließlich
+      ETL-Prozessen. Versiert im Einsatz von Python, JavaScript und PHP. Fundiertes Know-how in
+      Web-Analytics-Tools (z. B. Google Analytics, Matomo), SQL sowie der Ableitung umsetzbarer
+      Handlungsempfehlungen zur Unterstützung datengetriebener Geschäftsentscheidungen.
+    </p>
+
+    <!-- Work Experience -->
+    <div class="section-title">Work experience</div>
+
+    <!-- Digitl GmbH -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Digital Analytics Consultant</span>
+        <span class="job-date">Okt 2025 – Present</span>
+      </div>
+      <div class="job-company">Digitl GmbH</div>
+      <ul>
+        <li>Konzeption und Leitung der Umsetzung skalierbarer Web-Analytics-Frameworks für E-Commerce- und
+          Non-E-Commerce-Websites unter Einsatz von Google Tag Manager (GTM) und Google Analytics 4 (GA4).</li>
+        <li>Strategische Beratung bei der Implementierung von serverseitigem und clientseitigem Tracking auf
+          Google Cloud, Microsoft Azure und Hetzner zur Verbesserung der Datenqualität und Umgehung von
+          Browserrestriktionen (ETP, ITP).</li>
+        <li>Entwicklung und Optimierung von cookieless- und consentless Tracking-Strategien unter Einhaltung
+          der Datenschutzvorgaben gemäß DSGVO und CCPA.</li>
+        <li>Integration von Tracking mit führenden Drittanbieter-Plattformen wie Google Ads, Meta (Facebook),
+          LinkedIn und Pinterest zur präzisen Kampagnenmessung und nutzerbezogenen Attributionsanalyse.</li>
+        <li>Entwicklung und Verwaltung vollständiger ETL-Pipelines zur automatisierten Verarbeitung und Analyse
+          von Verhaltensdaten mittels Python, BigQuery und Cloud Functions.</li>
+        <li>Aufbau und Pflege interaktiver Dashboards in Looker Studio und Power BI für SEO, SEA, Marketing,
+          UX, Management und externe Kunden zur Unterstützung strategischer Entscheidungen.</li>
+        <li>Umsetzung fortgeschrittener Tagging-Strategien, UTM-Logik und Event-Modelle für detaillierte
+          Funnel-Analysen und Kampagnenleistungsbewertung.</li>
+        <li>Durchführung und Auswertung von A/B- und multivariaten Tests inklusive statistischer Analyse zur
+          Optimierung der User Experience.</li>
+        <li>Sicherstellung einer datenschutzkonformen Tracking-Architektur inklusive Cookie-Consent-Management
+          und regelmäßiger Audits der Datenverarbeitung.</li>
+        <li>Enge Zusammenarbeit in agilen, cross-funktionalen Teams mit Product Ownern, Entwicklern und
+          Designern zur nahtlosen Integration von Analytics-Lösungen in digitale Plattformen.</li>
+      </ul>
+    </div>
+
+    <!-- Clicks Digital GmbH -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Web Analyst</span>
+        <span class="job-date">Aug 2020 – Sep 2025</span>
+      </div>
+      <div class="job-company">Clicks Digital GmbH</div>
+      <ul>
+        <li>Konzeption und Umsetzung eines skalierbaren Web-Analytics-Frameworks für E-Commerce- und
+          Non-E-Commerce-Websites unter Einsatz von Google Tag Manager (GTM) und Google Analytics 4 (GA4).</li>
+        <li>Erfolgreiche Implementierung von serverseitigem und clientseitigem Tracking auf Google Cloud,
+          Microsoft Azure, stape.io sowie einem eigenen Server bei Hetzner, um die Datenqualität zu verbessern,
+          Browserrestriktionen (ETP, ITP) zu umgehen und eine plattformübergreifende Resilienz
+          sicherzustellen.</li>
+        <li>Einführung von cookieless- und consentless Tracking-Strategien, um eine konsistente Datenqualität
+          zu gewährleisten – unter Einhaltung der Datenschutzvorgaben gemäß DSGVO und CCPA.</li>
+        <li>Integration von Tracking mit führenden Drittanbieter-Plattformen wie Google Ads, Meta (Facebook),
+          LinkedIn, Pinterest und weiteren – zur präzisen Kampagnenmessung und nutzerbezogenen
+          Attributionsanalyse.</li>
+        <li>Entwicklung vollständiger ETL-Pipelines zur automatisierten Verarbeitung und Analyse von
+          Verhaltensdaten mittels Python, BigQuery und Cloud Functions.</li>
+        <li>Aufbau und Pflege interaktiver Dashboards in Looker Studio und Power BI, zugeschnitten auf die
+          Anforderungen von SEO, SEA, Marketing, UX, Management und externen Kunden.</li>
+        <li>Umsetzung fortgeschrittener Tagging-Strategien, UTM-Logik und Event-Modelle, um detaillierte
+          Funnel-Analysen und die Auswertung von Kampagnenleistungen zu ermöglichen.</li>
+        <li>Durchführung und Auswertung von A/B- und multivariaten Tests, inklusive statistischer Analyse zur
+          Optimierung der User Experience und zur Ableitung personalisierter Maßnahmen.</li>
+        <li>Verknüpfung von First-Party-Daten mit Customer Data Platforms (CDPs) zur Unterstützung von
+          Personalisierungsstrategien und Nutzersegmentierungen entlang der Customer Journey.</li>
+        <li>Enge Zusammenarbeit in agilen, cross-funktionalen Teams mit Product Ownern, Entwicklern und
+          Designern zur nahtlosen Integration von Analytics-Lösungen in digitale Plattformen.</li>
+        <li>Sicherstellung einer datenschutzkonformen Tracking-Architektur inklusive Cookie-Consent-Management
+          und regelmäßiger Audits der Datenverarbeitung.</li>
+      </ul>
+    </div>
+
+    <!-- Peak Ace Ag -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Junior Data Scientist (SEO)</span>
+        <span class="job-date">Okt 2019 – Feb 2020</span>
+      </div>
+      <div class="job-company">Peak Ace Ag (Berlin, Germany)</div>
+      <ul>
+        <li>Nutzung von REST-APIs mit Python zur Datenaufnahme von verschiedenen Webseiten in BigQuery.</li>
+        <li>Analyse verschiedener Rohdatenformate wie JSON, CSV und XML mit Python unter Verwendung von
+          Pandas, Numpy etc.</li>
+        <li>Verarbeitung und Laden gebundener und ungebundener Daten von einem Google Pub/Sub Topic nach
+          BigQuery mittels Cloud Dataflow und Python.</li>
+        <li>Verwendung von Google Cloud Functions mit Python zum Laden von Daten in BigQuery bei Eingang von
+          CSV-Dateien im GCS-Bucket.</li>
+        <li>Aufbau und Architektur mehrerer Datenpipelines sowie vollständiger ETL- und ELT-Prozesse zur
+          Datenaufnahme und -transformation in GCP; Aufgabenkoordination im Team.</li>
+        <li>Erstellung automatisierter Prozesse, Listen, Reports und benutzerdefinierter Tasks in Google Apps
+          Script für Kunden sowie den internen Gebrauch.</li>
+        <li>Entwicklung eines Machine-Learning-Modells zur Textklassifikation mit Scikit-learn und Naive Bayes
+          zur Vorhersage der Nutzerintention mit einer Genauigkeit von 87 % basierend auf historischen
+          Keyword-Suchdaten.</li>
+        <li>Entwicklung eines Python-Skripts zur Kategorisierung von Keywords für die SEO- und
+          Content-Abteilung.</li>
+        <li>Entwicklung eines Python-Skripts zur Automatisierung des monatlichen Screaming-Frog-Crawls,
+          inklusive Hervorhebung von Änderungen und automatischer Report-Erstellung per E-Mail oder über ein
+          separates Kunden-Dashboard.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section-title">Education</div>
+
+    <div class="edu">
+      <div class="edu-header">
+        <span class="edu-degree">Master of Science in Datenanalyse und Marketing</span>
+        <span class="edu-date">Feb 2018 – Mar 2019</span>
+      </div>
+      <div class="edu-school">Arden University (Berlin, Germany)</div>
+      <ul>
+        <li>Analyse von TESLAs Marketingstrategie unter Anwendung quantitativer und qualitativer
+          Marketingmethoden (Masterarbeit)</li>
+      </ul>
+    </div>
+
+    <div class="edu">
+      <div class="edu-header">
+        <span class="edu-degree">Bachelor of Science in Maschinenbau</span>
+        <span class="edu-date">Okt 2013 – Mai 2017</span>
+      </div>
+      <div class="edu-school">DHA Suffa University (Pakistan)</div>
+      <ul>
+        <li>Entwicklung einer Turbine zur Stromerzeugung mithilfe einer oszillierenden Wassersäule
+          (Abschlussprojekt)</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section-title">Professional Certifications</div>
+
+    <div class="cert">
+      <div class="cert-header">
+        <span class="cert-name">Node with React: FullStack Web Development</span>
+        <span class="cert-date">– April 2021</span>
+      </div>
+      <div class="cert-issuer">Udemy</div>
+      <div class="cert-desc">Entwicklung einer E-Commerce-App in Node.js unter Verwendung des MEAN-Stacks</div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-header">
+        <span class="cert-name">Become a PHP Master – CMS Project</span>
+        <span class="cert-date">– April 2021</span>
+      </div>
+      <div class="cert-issuer">Udemy</div>
+      <div class="cert-desc">Entwicklung eines Inventarsystems mit PHP sowie Ajax und jQuery</div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-header">
+        <span class="cert-name">AWS Cloud Developer Training</span>
+        <span class="cert-date">– Jun 2020</span>
+      </div>
+      <div class="cert-issuer">Oracle</div>
+      <div class="cert-desc">AWS Architect Training</div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-header">
+        <span class="cert-name">Django – Python Web App Framework</span>
+        <span class="cert-date">– Mar 2020</span>
+      </div>
+      <div class="cert-issuer">Oracle</div>
+      <div class="cert-desc">Entwurf und Umsetzung eines vollständigen Online-Shops für Kosmetikprodukte</div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-header">
+        <span class="cert-name">Big data analytics with machine learning</span>
+        <span class="cert-date">– May 2020</span>
+      </div>
+      <div class="cert-issuer">Oracle</div>
+      <div class="cert-desc">Big Data Mining, Pre-Processing, Cleaning, Visualisierung, Deep Learning</div>
+    </div>
+
+  </div><!-- /col-left -->
+
+  <!-- RIGHT COLUMN -->
+  <div class="col-right">
+
+    <div class="section-title">Skills</div>
+
+    <div class="skill-item">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">React/Angular</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">DevOps &amp; Containerization:<br>Docker, Kubernetes, GitHub Actions</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Node.js</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Google Cloud / Linux Server Architect</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Django</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">PHP</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">HTML/CSS</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">SQL</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Adobe Analytics</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Matomo</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">BigQuery</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Google Tag Manager</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">WordPress</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Microsoft Excel</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Google Analytics</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-name">Google Data Studio / Looker Studio</div>
+      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="section-title" style="margin-top:24px;">Languages</div>
+
+    <div class="lang-group">
+      <div class="lang-label">German</div>
+      <ul>
+        <li>Professionelle Sprachkenntnisse (C1-Zertifikat)</li>
+      </ul>
+    </div>
+    <div class="lang-group">
+      <div class="lang-label">English</div>
+      <ul>
+        <li>Muttersprache oder zweisprachige Sprachkompetenz</li>
+      </ul>
+    </div>
+
+  </div><!-- /col-right -->
+
+</div><!-- /body -->
+
+</body>
+</html>
